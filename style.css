@@ -1,0 +1,217 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    overflow-y: auto; /* Ensure scrolling works */
+}
+
+/* Background Section */
+.background-container {
+    background-image: url('shaadi.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Increased time to 3 seconds */
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 2s ease-out; /* Added a slide-in effect for form */
+}
+
+/* Animation for Slide In */
+@keyframes slideIn {
+    from { 
+        transform: translateY(-100px); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-top: 80px;  /* Adjust the margin to make title appear lower */
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+    font-weight: bold;
+}
+
+/* Form Fields and Button Styling */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-column {
+    width: 22%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Guest List Styling */
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+li {
+    margin-top: 5px;
+}
+
+/* Additional Styling for Inputs */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Adjust the appearance of the guest input */
+#guest-list input {
+    width: 70%;
+    display: inline-block;
+}
+
+#guest-list button {
+    width: 25%;
+    display: inline-block;
+}
+
+/* Login Form Styling */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+/* History Section Styling */
+.history-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.history-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.history-section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.history-section .history-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.history-section .history-item:last-child {
+    border-bottom: none;
+}
+
+/* Bold Text Styling */
+.bold-text {
+    font-weight: bold;
+}
+
+/* Larger Tick Marks */
+.tick-mark {
+    width: 20px;
+    height: 20px;
+    transform: scale(1); /* Reset the tick mark size */
+    vertical-align: middle; /* Align in the center */
+}
